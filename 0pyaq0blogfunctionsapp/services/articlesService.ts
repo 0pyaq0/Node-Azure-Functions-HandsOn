@@ -7,7 +7,7 @@ const articleService = {
   init() {
     try {
       this.client = new CosmosClient(CONNECTION_STRING);
-      this.database = this.client.database("academy2");
+      this.database = this.client.database("0pyaq0blogdb");
       this.container = this.database.container("articles");
     } catch (err) {
       console.log(err.message);
