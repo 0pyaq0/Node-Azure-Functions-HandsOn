@@ -10,7 +10,7 @@ const httpTrigger: AzureFunction = async function (
   try {
 
     //호출주소(url)로 전달되는 게시글의 고유번호
-    //domain.com/article/1
+    //domain.com/api/article/1
     const id = req.params.id;
 
     //http본문으로 전달되는 json데이터
