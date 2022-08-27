@@ -22,7 +22,7 @@ const articleService = {
     const { resources } = await iterator.fetchAll();
     return resources;
   },
-  async read(id,ipaddress): Promise<string> {
+  async read(id,ipaddress): Promise<string> { 
     const item = this.container.item(id,ipaddress);
     const article = await item.read();
     return article.resource;
